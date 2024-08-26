@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:  hsl(226, 43%, 10%);
+  font-size: 18px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.flex-class{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 244px 244px;
+    width: 1110px;
+    gap: 30px;
+}
+
+aside{
+    grid-column: 1 /2;
+    grid-row: 1/3;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+
+.profile{
+    width: 100%;
+    height: 354px;
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+.image-profile {
+    padding-left: 30px;
+}
+.image-profile img {
+    border-radius: 50%;
+    height: 78px;
+    width: 78px;
+}
+
+.report{
+    font-size: 15px !important;
+    font-weight: 300;
+   
+}
+.name-profile, .report{
+    padding-left: 30px;
+}
+
+.name-profile h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.frenquency{
+    height: 164px;
+    width: 100%;
+}
+
+
+#work{
+    background-color: blue;
+}
+
+#exrcise{
+    background-color: yellow;
+}
+
+#play{
+    background-color: violet;
+}
+
+#social{
+    background-color: aquamarine;
+}
+
+#study{
+    background-color: blueviolet;
+}
+
+#self-care{
+    background-color: cadetblue;
+}
