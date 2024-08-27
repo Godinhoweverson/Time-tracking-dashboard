@@ -22,6 +22,10 @@ body{
     flex-direction: column;
 }
 
+p{
+    cursor: pointer;
+}
+
 main{
     display: grid;
     grid-template-columns: 255px 255px 255px 255px;
@@ -46,6 +50,7 @@ aside{
 
 .image-profile {
     padding-left: 30px;
+    height: 114px;
 }
 .image-profile img {
     border-radius: 50%;
@@ -54,11 +59,12 @@ aside{
 }
 
 .report{
+    height: 18px;
     font-size: 15px !important;
     font-weight: 300;
-   
 }
-.name-profile, .report{
+
+.name-profile, .report, .text{
     padding-left: 30px;
 }
 
@@ -72,27 +78,90 @@ aside{
     width: 100%;
 }
 
-
-#work{
-    background-color: blue;
+.text{
+    margin-bottom: 21px;
+    cursor: pointer;
 }
 
-#exrcise{
-    background-color: yellow;
+.task-box{
+    align-items: center !important;
+    border-radius: 15px;
+}
+
+#nav-color{
+    display: flex;
+    justify-content: flex-end; 
+    align-items:flex-start; 
+    height: 22%; 
+    width: 100%;
+}
+
+.data{
+    width: 100%;
+    height: 199px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 14px;
+
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    margin: 0 0 16px 20px;
+}
+
+.time{
+    font-size: 56px;
+    height: 66px;
+    margin: 0 0 8px 20px;
+}
+
+.last-update{
+    font-size: 15px;
+    height: 18px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+#work{
+    background-color:  hsl(15, 100%, 70%)
+}
+
+#exercise{
+    background-color:  hsl(145, 58%, 55%)
 }
 
 #play{
-    background-color: violet;
+    background-color: hsl(195, 74%, 62%)
 }
 
 #social{
-    background-color: aquamarine;
+    background-color:  hsl(264, 64%, 52%)
 }
 
 #study{
-    background-color: blueviolet;
+    background-color: hsl(348, 100%, 68%)
 }
 
 #self-care{
-    background-color: cadetblue;
+    background-color:  hsl(43, 84%, 65%)
+
 }
+
+
+@media screen and (max-width: 900px) {
+    main{
+        grid-template-columns: 327px 327px;
+        grid-template-rows: 244px 244px 244px 244px;
+    }
+
+    
+    aside{
+        grid-column: 1 /3;
+  
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 15px;
+    }
+  }
