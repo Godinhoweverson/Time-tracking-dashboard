@@ -11,7 +11,6 @@ body{
   min-height: 100vh;
   background-color:  hsl(226, 43%, 10%);
   font-size: 18px;
-  color: white;
   font-family: "Rubik", sans-serif;
 }
 
@@ -22,8 +21,20 @@ body{
     flex-direction: column;
 }
 
+h1{
+    font-size: 40px;
+    font-weight:lighter;  
+    color: #fff;
+}
+
 p{
     cursor: pointer;
+    color: #fff;
+}
+
+span{
+    font-size: 15px !important;
+    color: hsl(235, 45%, 62%);
 }
 
 main{
@@ -32,7 +43,7 @@ main{
     grid-template-rows: 244px 244px;
     width: 1110px;
     gap: 30px;
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 aside{
@@ -61,16 +72,13 @@ aside{
 
 .report{
     height: 18px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #fff !important;
 }
 
 .name-profile, .report, .text{
     padding-left: 30px;
-}
-
-.name-profile h1{
-    font-size: 40px;
-    font-weight: 400;
 }
 
 .frenquency{
@@ -81,6 +89,7 @@ aside{
 .text{
     margin-bottom: 21px;
     cursor: pointer;
+    color: hsl(235, 45%, 62%);
 }
 
 .task-box{
@@ -173,7 +182,7 @@ aside{
     }
 
     .image-profile{
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .frenquency{
         align-items: center !important;
@@ -195,12 +204,43 @@ aside{
     .profile{
         height: 140px;
     }
+    .report{
+        padding: 0px 0px 10px 15px;
+    }
+    .name-profile{
+        padding-left: 15px;
+    }
+    
+    h1{
+        font-size: 24px;
+    }
 
+    .image-profile{
+        padding: 0px;
+    }
     .image-profile img{
         height: 64px;
         width: 64px;
     }
-    .frenquency{  
+    
+    .time-tracking{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .task{
+        margin-bottom: 0;
+        width: 279px;
+        height: 22px;
+        margin-bottom: 6px;
+        margin-left: 25px;
+    }
 
+    .time{
+        height: 38px;
+        font-size: 32px;
+        margin-top: 15px;
+        margin: 0px
     }
   }
