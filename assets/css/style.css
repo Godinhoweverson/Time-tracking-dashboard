@@ -110,7 +110,6 @@ aside{
     height: 199px;
     background-color: hsl(235, 46%, 20%);
     border-radius: 14px;
-
 }
 
 .task{
@@ -132,6 +131,15 @@ aside{
     height: 18px;
     margin-left: 20px;
     font-weight: 300;
+}
+
+#work-data:hover, 
+#exercise-data:hover, 
+#play-data:hover, 
+#social-data:hover, 
+#study-data:hover, 
+#self-care-data:hover {
+    background-color: hsl(236, 100%, 87%);
 }
 
 #work{
